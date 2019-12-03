@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <style>
+      .content {
+          width:%;
+          float:left;
+      }
+    </style>
+
+<div class="">
+<h3>Quick Job Search </h3>
+    <form action="">
+
+        Post &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <input type="text" name= "skill"><br><br>
+        Qualification       : <select>
+            <option value="">Select Qualification</option>
+        </select><br><br>
+        Location &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : <select>
+            <option value="">{{ loc }} </option>
+        </select><br><br>
+
+        <input type="submit" value="Search">
+        <input type="Reset" value="Reset"></form>
+
+</div>
+<div>
+<hr>
+
+<h3>Latest Jobs</h3>
+<table border="1px", width="30%">
+    <tr>
+        <th>Job</th>
+        <th>Department</th>
+        <th>Location</th>
+    </tr>
+    <tr>
+        <th>{{ title }}</th>
+        <th>{{ dept }}</th>
+        <th>{{ loc }}</th>
+    </tr>
+   
+</table>
+
+</div>
+
+{% endblock %}
