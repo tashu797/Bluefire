@@ -11,14 +11,22 @@
 
 <div class="">
 <h3>Quick Job Search </h3>
-    <form action="">
-
-        Post &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <input type="text" name= "skill"><br><br>
+    <form class="form" action="Result.html" method="get">
+        <div class="form-group">
+            <label class="control-label" for="post">Post</label>
+            <input id="post" class="form-control" type="text" name= "skill">
+        </div>
         Qualification       : <select>
-            <option value="">Select Qualification</option>
+        <option>Select</option>
+        {% for i in a %}
+            <option value="">{{i.job_qual_title}}</option>
+        {% endfor %}
         </select><br><br>
-        Location &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : <select>
-            <option value="">{{ loc }} </option>
+        Location : <select>
+        <option>Select</option>
+        {% for j in b %}
+            <option>{{ j.job_loc_title }} </option>
+        {% endfor %}
         </select><br><br>
 
         <input type="submit" value="Search">
@@ -29,18 +37,23 @@
 <hr>
 
 <h3>Latest Jobs</h3>
-<table border="1px", width="30%">
+<table border="5px", width="100%">
     <tr>
         <th>Job</th>
         <th>Department</th>
         <th>Location</th>
+        <th>Qualification</th>
+
     </tr>
+    {% for a in jobs %}
     <tr>
-        <th>{{ title }}</th>
-        <th>{{ dept }}</th>
-        <th>{{ loc }}</th>
+        <th>{{ a.job_title }}</th>
+        <th>{{ a.job_department }}</th>
+        <th>{{ a.job_loc.job_loc_title }}</th>
+        <th>{{ a.job_qual.job_qual_title }}</th>
     </tr>
-   
+    {% endfor %}
+
 </table>
 
 </div>

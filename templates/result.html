@@ -2,7 +2,36 @@
 
 {% block content %}
 
-    Result: {{ result }}<br>
+    Result: <br>
     <a href="/">Home</a>
+
+
+    <style>
+      .content {
+          width:%;
+          float:left;
+      }
+    </style>
+
+<h3>Found Jobs(Based on your Search)</h3>
+<table border="5px", width="100%">
+    <tr>
+        <th>Job</th>
+        <th>Department</th>
+        <th>Location</th>
+        <th>Qualification</th>
+
+    </tr>
+    {% for a in jobs %}
+    <tr>
+        <th>{{ a.job_title}}</th>
+        <th>{{ a.job_department }}</th>
+        <th>{{ a.job_loc_id }}</th>
+        <th>{{ a.job_qual_id }}</th>
+    </tr>
+    {% endfor %}
+
+</table>
+
 
 {% endblock %}

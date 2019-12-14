@@ -1,17 +1,20 @@
 from django.shortcuts import render
-from .models import job
+from .models import job, job_qual, job_loc
 
 
 def home_view(request):
-    item = job.objects.get(id=3)
-    a = {
-        'title': item.job_title,
-        'dept': item.job_department,
-        'loc': item.job_loc
-        }
+    jobs = job.objects.all()
+    a = job_qual.objects.all()
+    b = job_loc.objects.all()
 
-    return render(request, "home.html", a)
+    return render(request, "home.html", {'a': a, 'b': b, 'jobs':jobs})
 
+def res_view(request):
+    jobs = job.objects.all()
+    a = job_qual.objects.all()
+    b = job_loc.objects.all()
+
+    return render(request, "result.html", {'a': a, 'b': b, 'jobs': jobs})
 
 
 
