@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d313d424-7599-43d6-a278-3d1265069df7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Bluefire.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b96661eb-76f5-4219-a50f-966d5f6c563c.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bluefire/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bluefire/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bluefire/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bluefire/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/migrations/0002_job_job_loc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +26,16 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -123,6 +104,9 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Bluefire/templates/home.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Bluefire" type="Python.DjangoServer" factoryName="Django server">
       <module name="Bluefire" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,6 +134,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Django tests.Test: calc" />
+        <item itemvalue="JavaScript Debug.home.html" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +163,20 @@
       <workItem from="1575355085154" duration="7206000" />
       <workItem from="1575370457171" duration="240000" />
       <workItem from="1575374555824" duration="613000" />
+      <workItem from="1575447177455" duration="8216000" />
+      <workItem from="1575461101506" duration="268000" />
+      <workItem from="1575461893039" duration="4164000" />
+      <workItem from="1576294911655" duration="4017000" />
+      <workItem from="1576314578538" duration="2737000" />
     </task>
+    <task id="LOCAL-00001" summary="Added admin view&#10;Added search pages&#10;Updated gitignore.&#10;Updated models.">
+      <created>1576317221518</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576317221518</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,13 +187,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added admin view&#10;Added search pages&#10;Updated gitignore.&#10;Updated models." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added admin view&#10;Added search pages&#10;Updated gitignore.&#10;Updated models." />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Bluefire$Test__calc.coverage" NAME="Test: calc Coverage Results" MODIFIED="1575290820762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Bluefire$Test__calc.coverage" NAME="Test: calc Coverage Results" MODIFIED="1575456411149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
